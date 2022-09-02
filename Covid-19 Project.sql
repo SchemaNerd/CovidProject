@@ -127,7 +127,7 @@ WHERE dea.continent IS NOT NULL;
 SELECT *, (Rolling_People_Vaccinated/population)*100
 FROM PercentPopulationVaccinated;
 
--- Creating view to store data for future visualizations (create multiple for practice)
+-- Creating view to store data for future visualizations
 
 CREATE VIEW PercentPopulationVaccinated1 AS
 	SELECT dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
